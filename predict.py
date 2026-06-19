@@ -131,7 +131,7 @@ class RegimePredictor:
     def predict_latest(
         self,
         df_m5: pd.DataFrame,
-        lookback_bars: int = 500,
+        lookback_bars: int = 1500,
     ) -> RegimePrediction:
         """
         Get the current regime prediction for the latest bar.
@@ -168,7 +168,7 @@ class RegimePredictor:
         cp_prob = float(bocpd_output["bocpd_cp_prob"].iloc[-1]) if len(bocpd_output) > 0 else 0.0
 
         # Alert if transition prob or changepoint prob is high
-        is_alert = (transition_prob > 0.3) or (cp_prob > bocpd_cfg.alert_threshold)
+        is_alert = bool((transition_prob > 0.3) or (cp_prob > bocpd_cfg.alert_threshold))
 
         all_probs = {REGIME_NAMES[i]: float(regime_probs[i]) for i in range(NUM_REGIMES)}
 

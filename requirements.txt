@@ -27,3 +27,6 @@ MetaTrader5>=5.0.45
 
 # Utilities
 tqdm>=4.65.0
+
+# GUI
+PyQt5>=5.15.0

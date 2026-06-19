@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-06-19 08:20:11",
+  "regime_id": 4,
+  "regime_name": "High-Vol Bearish/Crisis",
+  "confidence": 0.6982837319374084,
+  "transition_probability": 0.30171287059783936,
+  "changepoint_probability": 0.01618971484833889,
+  "is_transition_alert": true,
+  "all_probabilities": {
+    "Low-Vol Bullish": 1.3219033867528651e-08,
+    "High-Vol Bullish": 3.2691257274564123e-06,
+    "Ranging": 6.76200917482106e-09,
+    "Low-Vol Bearish": 1.241922973349574e-07,
+    "High-Vol Bearish/Crisis": 0.6982837319374084
+  }
+}

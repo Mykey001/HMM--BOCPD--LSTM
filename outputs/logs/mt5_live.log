@@ -1,0 +1,63 @@
+[2026-06-18 17:11:22] INFO     mt5_live — ============================================================
+[2026-06-18 17:11:22] INFO     mt5_live — STARTING MT5 LIVE REGIME DETECTION SERVICE
+[2026-06-18 17:11:22] INFO     mt5_live — ============================================================
+[2026-06-18 17:11:23] INFO     mt5_live — MT5 connected: MetaTrader 5 (build 5833)
+[2026-06-18 17:11:23] INFO     mt5_live — Symbol XAUUSD: spread=35, bid=4243.36, ask=4243.71
+[2026-06-18 17:11:23] INFO     mt5_live — Loading trained models...
+[2026-06-18 17:11:26] INFO     mt5_live — Symbol: XAUUSD
+[2026-06-18 17:11:26] INFO     mt5_live — Timeframe: M5
+[2026-06-18 17:11:26] INFO     mt5_live — Lookback bars: 500
+[2026-06-18 17:11:26] INFO     mt5_live — Signal file: C:\Users\MYCkey98\Desktop\Organized_Files\05_ML_Projects\high precision HMM\outputs\mt5_signal.json
+[2026-06-18 17:11:26] INFO     mt5_live — Poll interval: 10s
+[2026-06-18 17:11:26] INFO     mt5_live — 
+[2026-06-18 17:11:32] ERROR    mt5_live — Prediction error: Need at least 100 valid samples, got 0
+[2026-06-18 17:15:30] ERROR    mt5_live — Prediction error: Need at least 100 valid samples, got 0
+[2026-06-18 17:20:04] ERROR    mt5_live — Prediction error: Need at least 100 valid samples, got 0
+[2026-06-18 17:22:38] INFO     mt5_live — 
+Service stopped by user.
+[2026-06-18 17:22:38] INFO     mt5_live — Total predictions: 3
+[2026-06-18 17:23:26] INFO     mt5_live — ============================================================
+[2026-06-18 17:23:26] INFO     mt5_live — STARTING MT5 LIVE REGIME DETECTION SERVICE
+[2026-06-18 17:23:26] INFO     mt5_live — ============================================================
+[2026-06-18 17:23:26] INFO     mt5_live — MT5 connected: MetaTrader 5 (build 5833)
+[2026-06-18 17:23:26] INFO     mt5_live — Symbol XAUUSD: spread=35, bid=4251.95, ask=4252.3
+[2026-06-18 17:23:26] INFO     mt5_live — Loading trained models...
+[2026-06-18 17:23:26] INFO     mt5_live — Symbol: XAUUSD
+[2026-06-18 17:23:26] INFO     mt5_live — Timeframe: M5
+[2026-06-18 17:23:26] INFO     mt5_live — Lookback bars: 1500
+[2026-06-18 17:23:26] INFO     mt5_live — Signal file: C:\Users\MYCkey98\Desktop\Organized_Files\05_ML_Projects\high precision HMM\outputs\mt5_signal.json
+[2026-06-18 17:23:26] INFO     mt5_live — Poll interval: 10s
+[2026-06-18 17:23:26] INFO     mt5_live — 
+[2026-06-18 17:24:00] ERROR    mt5_live — Prediction error: Object of type bool is not JSON serializable
+[2026-06-18 17:25:42] ERROR    mt5_live — Prediction error: Object of type bool is not JSON serializable
+[2026-06-18 17:34:11] ERROR    mt5_live — Prediction error: Object of type bool is not JSON serializable
+[2026-06-18 17:35:53] ERROR    mt5_live — Prediction error: Object of type bool is not JSON serializable
+[2026-06-18 17:40:31] ERROR    mt5_live — Prediction error: Object of type bool is not JSON serializable
+[2026-06-18 17:48:10] ERROR    mt5_live — Prediction error: Object of type bool is not JSON serializable
+[2026-06-18 18:18:17] ERROR    mt5_live — Prediction error: Object of type bool is not JSON serializable
+[2026-06-18 18:20:20] ERROR    mt5_live — Prediction error: Object of type bool is not JSON serializable
+[2026-06-18 18:25:10] ERROR    mt5_live — Prediction error: Object of type bool is not JSON serializable
+[2026-06-18 18:28:16] INFO     mt5_live — 
+Service stopped by user.
+[2026-06-18 18:28:16] INFO     mt5_live — Total predictions: 9
+[2026-06-18 18:28:36] INFO     mt5_live — ============================================================
+[2026-06-18 18:28:36] INFO     mt5_live — STARTING MT5 LIVE REGIME DETECTION SERVICE
+[2026-06-18 18:28:36] INFO     mt5_live — ============================================================
+[2026-06-18 18:28:36] INFO     mt5_live — MT5 connected: MetaTrader 5 (build 5833)
+[2026-06-18 18:28:36] INFO     mt5_live — Symbol XAUUSD: spread=35, bid=4240.45, ask=4240.8
+[2026-06-18 18:28:36] INFO     mt5_live — Loading trained models...
+[2026-06-18 18:28:37] INFO     mt5_live — Symbol: XAUUSD
+[2026-06-18 18:28:37] INFO     mt5_live — Timeframe: M5
+[2026-06-18 18:28:37] INFO     mt5_live — Lookback bars: 1500
+[2026-06-18 18:28:37] INFO     mt5_live — Signal file: C:\Users\MYCkey98\Desktop\Organized_Files\05_ML_Projects\high precision HMM\outputs\mt5_signal.json
+[2026-06-18 18:28:37] INFO     mt5_live — Poll interval: 10s
+[2026-06-18 18:28:37] INFO     mt5_live — 
+[2026-06-18 18:28:45] INFO     mt5_live — [2026-06-18 18:25:00] High-Vol Bearish/Crisis (conf=67.9%, trans=32.1%, cp=1.2%) ⚠️ ALERT
+[2026-06-18 18:30:15] INFO     mt5_live — [2026-06-18 18:30:00] High-Vol Bearish/Crisis (conf=69.5%, trans=30.5%, cp=1.1%) ⚠️ ALERT
+[2026-06-18 18:35:15] INFO     mt5_live — [2026-06-18 18:35:00] High-Vol Bearish/Crisis (conf=70.6%, trans=29.4%, cp=0.9%)
+[2026-06-18 18:41:58] INFO     mt5_live — [2026-06-18 18:40:00] High-Vol Bearish/Crisis (conf=70.9%, trans=29.1%, cp=0.9%)
+[2026-06-18 18:46:56] INFO     mt5_live — [2026-06-18 18:45:00] High-Vol Bearish/Crisis (conf=70.0%, trans=30.0%, cp=1.1%)
+[2026-06-18 18:50:45] INFO     mt5_live — [2026-06-18 18:50:00] High-Vol Bearish/Crisis (conf=70.4%, trans=29.6%, cp=0.8%)
+[2026-06-18 18:52:23] INFO     mt5_live — 
+Service stopped by user.
+[2026-06-18 18:52:23] INFO     mt5_live — Total predictions: 6

@@ -220,7 +220,7 @@ class MT5Config:
     """MetaTrader 5 live connector configuration."""
     symbol: str = "XAUUSD"
     timeframe_mt5: str = "M5"          # MT5 timeframe constant name
-    lookback_bars: int = 500           # Bars to fetch for feature computation
+    lookback_bars: int = 1500          # Bars to fetch for feature computation
     signal_file: str = str(PROJECT_ROOT / "outputs" / "mt5_signal.json")
     log_file: str = str(LOG_DIR / "mt5_live.log")
     poll_interval_seconds: int = 10    # How often to check for new bar

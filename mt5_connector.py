@@ -154,7 +154,7 @@ def write_signal(prediction: RegimePrediction, timestamp: str):
         "confidence": round(prediction.confidence, 4),
         "transition_probability": round(prediction.transition_probability, 4),
         "changepoint_probability": round(prediction.changepoint_probability, 4),
-        "is_transition_alert": prediction.is_transition_alert,
+        "is_transition_alert": bool(prediction.is_transition_alert),
         "all_probabilities": {
             k: round(v, 4) for k, v in prediction.all_probabilities.items()
         },
@@ -213,8 +213,12 @@ def run_live_service():
         while True:
             # Fetch latest bars
             df = fetch_mt5_bars(mt5_cfg.lookback_bars)
-            if df is None or len(df) < 200:
-                live_logger.warning("Insufficient data, waiting...")
+            if df is None or len(df) < 1000:
+                live_logger.warning(
+                    f"Insufficient data: fetched {len(df) if df is not None else 0} bars, "
+                    f"need at least 1000 for indicators and Z-score warm-up. "
+                    f"Please ensure your MT5 chart has enough historical bars loaded. Waiting..."
+                )
                 time.sleep(mt5_cfg.poll_interval_seconds)
                 continue
 
@@ -231,8 +235,10 @@ def run_live_service():
             # Clean data
             df_clean = clean_data(df)
 
-            if len(df_clean) < 200:
-                live_logger.warning("Too few clean bars, waiting...")
+            if len(df_clean) < 1000:
+                live_logger.warning(
+                    f"Too few clean bars: got {len(df_clean)}, need at least 1000. Waiting..."
+                )
                 time.sleep(mt5_cfg.poll_interval_seconds)
                 continue
 
